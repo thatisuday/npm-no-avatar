@@ -1,6 +1,13 @@
 ## no-avatar | Generate Avatar with Initials in Node.js
 Module and Express middleware to generate avatar image with initials
 
+![](https://img.shields.io/npm/v/no-avatar.svg?style=flat-square)
+![](https://img.shields.io/npm/dt/no-avatar.svg?style=flat-square)
+![](https://img.shields.io/github/issues/thatisuday/no-avatar.svg?style=flat-square)
+![](https://img.shields.io/david/thatisuday/no-avatar.svg?style=flat-square)
+![](https://img.shields.io/gratipay/project/no-avatar.svg?style=flat-square)
+
+
 ![](https://i.imgur.com/CuCBdL1.jpg)
 
 ## Install 
