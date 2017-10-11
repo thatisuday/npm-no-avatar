@@ -65,7 +65,7 @@ save(savePath, options, function(err){
 ***
 
 ### Test : Express Middleware
-Run `node demo/server.js` and visit `http://localhost:3000/avatar.png?text=UH&fontSize=80`
+Run `node demo/server.js` and visit `http://localhost:80/avatar.png?text=UH&fontSize=80`
 
 ### Test : Manual making
 Run `node demo/make.js` and check `avatar.png` in that folder.
