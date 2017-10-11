@@ -1,6 +1,7 @@
 # no-avatar
-Module and Express middleware to generate avatar image with initials
+Module and Express middleware to generate avatar image with initials.
 
+![](https://i.imgur.com/CuCBdL1.jpg)
 
 ## Install 
 npm i -S no-avatar
