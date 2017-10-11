@@ -1,5 +1,5 @@
-# no-avatar
-Module and Express middleware to generate avatar image with initials.
+## no-avatar | Generate Avatar with Initials in Node.js
+Module and Express middleware to generate avatar image with initials
 
 ![](https://i.imgur.com/CuCBdL1.jpg)
 
