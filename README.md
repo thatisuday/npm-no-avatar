@@ -1,5 +1,5 @@
 # no-avatar
-Express middleware to generate dummy avatar with name initials
+Module and Express middleware to generate avatar image with initials
 
 
 ## Install 
@@ -8,10 +8,11 @@ npm i -S no-avatar
 ## Install GraphicsMagick
 http://www.graphicsmagick.org/download.html
 
-> test installation by running `gm -version`
+> test installation by running `gm -version` command
 
+***
 
-## use as express middleware
+## Use as express middleware
 ```
 const { middleware } = require('no-avatar');
 app.get('/avatar.png', middleware);
@@ -20,7 +21,7 @@ app.get('/avatar.png', middleware);
 > Accessing `/avatar.png` route will return a png image. You can configure image by adding options in query parameters as below.
 
 
-## create avatar manually
+## Create avatar manually
 
 ```
 const fs = require('fs');
@@ -43,8 +44,8 @@ make(options, function(err, buffer){
 
 ***
 
-## middleware test
-node demo/server.js and visit `http://localhost:3000/avatar.png?text=UH&fontSize=80`
+### Test : Express Middleware
+Run `node demo/server.js` and visit `http://localhost:3000/avatar.png?text=UH&fontSize=80`
 
-## manually creating test
-node demo/create.js and check `avatar.png` in that folder.
+### Test : Manually Creating
+Run `node demo/create.js` and check `avatar.png` in that folder.
