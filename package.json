@@ -1,6 +1,6 @@
 {
   "name": "no-avatar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Module and Express middleware to generate avatar image with initials",
   "main": "index.js",
   "scripts": {

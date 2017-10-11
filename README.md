@@ -13,7 +13,7 @@ http://www.graphicsmagick.org/download.html
 
 ***
 
-## Use as express middleware
+## Use as express middleware (server implementation)
 ```
 const { middleware } = require('no-avatar');
 app.get('/avatar.png', middleware);
@@ -22,7 +22,7 @@ app.get('/avatar.png', middleware);
 > Accessing `/avatar.png` route will return a png image. You can configure image by adding options in query parameters as below.
 
 
-## Create avatar manually
+## Make avatar manually (Get buffer)
 
 ```
 const fs = require('fs');
@@ -35,18 +35,33 @@ make(options, function(err, buffer){
 ```
 
 
+## Save avatar (Save to a file)
+
+```
+const { save } =  require('no-avatar');
+const savePath = __dirname + '/avatar.png';
+
+save(savePath, options, function(err){
+	if(err) return console.log(err);
+			return console.log('avatar.png saved at path ' + savePath);
+});
+```
+
 ## options (also query object)
-- width (integer) : pixel image width. Default 150.
-- height (integer) : pixel image height. Default 150.
+- width (integer) : Pixel image width. Default 150.
+- height (integer) : Pixel image height. Default 150.
 - text (string) : name initials. You can pass name as well, initials will be created automatically. By default, 'NO' is used.
 - bgColor (hex color code) : Background color of image. No need to add pound (#) sing, will be added automatically. By default, background color is chosen randomly from a pallet.
 - fontColor (hex color code) : Text (font) color. No need to add pound (#) sing, will be added automatically. By default, font color is `ffffff` (white).
-- fontSize (integer) : Text (font) size.
+- fontSize (integer) : Pixel text (font) size. Default is 60;
 
 ***
 
 ### Test : Express Middleware
 Run `node demo/server.js` and visit `http://localhost:3000/avatar.png?text=UH&fontSize=80`
 
-### Test : Manually Creating
-Run `node demo/create.js` and check `avatar.png` in that folder.
+### Test : Manual making
+Run `node demo/make.js` and check `avatar.png` in that folder.
+
+### Test : Saving to a file
+Run `node demo/save.js` and check `avatar.png` in that folder.
